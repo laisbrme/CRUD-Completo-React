@@ -1,0 +1,12 @@
+Criando um novo projeto react
+
+1º Criar o projeto com o comando:
+    npx create-react-app nome-projeto
+
+2º Limpar a base do projeto:
+    public
+        Remover os arquivos desnecessários
+        *Deve ficar o index.html*
+    src
+        Remover os arquivos desnecessários
+        *Deve ficar o App.js e o index.js*
