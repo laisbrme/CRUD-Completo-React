@@ -1,0 +1,75 @@
+h1 {
+	text-align: center;
+	font-weight: 600;
+}
+
+h1,
+p {
+	text-align: center;
+}
+
+p {
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+hr {
+	width: 10%;
+	border-width: 5px;
+	border-style: inset;
+}
+
+img {
+	max-width: 50%;
+}
+
+.titulo {
+	color: var(--cor-primaria);
+	font-size: 42px;
+	margin-bottom: 50px;
+}
+
+.logo {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.retornar-login a {
+	text-decoration: none;
+	color: var(--cor-primaria);
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.retornar-login {
+	margin-top: 45px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.caixa-recuperacao {
+	width: 500px;
+	background: #b1b1b1;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 70px;
+	padding: 77px 55px 33px;
+}
+
+#btn-enviar {
+	width: 100%;
+	padding: 8px;
+	border-radius: 15px;
+	margin-top: 10px;
+	background-color: var(--cor-primaria);
+	border: none;
+	color: #fff;
+	font-weight: 600;
+}
+
+#btn-enviar:hover {
+	background-color: var(--cor-secundaria);
+	color: black;
+	cursor: pointer;
+}

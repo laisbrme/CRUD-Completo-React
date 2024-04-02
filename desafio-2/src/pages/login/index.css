@@ -15,8 +15,8 @@
 
 .titulo-login {
     color: var(--cor-primaria);
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin-bottom: 50px;
 }
 
 .grupo {
@@ -31,7 +31,7 @@
 }
 
 .esqueci-minha-senha {
-    margin-top: 70px;
+    margin-top: 50px;
     text-align: center;
     line-height: 1.5;
 }

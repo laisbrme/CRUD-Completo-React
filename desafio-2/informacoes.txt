@@ -10,3 +10,12 @@ Criando um novo projeto react
     src
         Remover os arquivos desnecessários
         *Deve ficar o App.js e o index.js*
+
+=============
+
+Criando uma página CRUD no react
+
+1º Criar uma página vazia
+2º Criar o serviço do CRUD
+3º Criar página inicial do CRUD
+4º Criar o modelo da nossa entidade que representa a regra de negócio
