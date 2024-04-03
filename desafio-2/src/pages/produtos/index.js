@@ -141,9 +141,9 @@ export default function Produtos() {
 
 			{/* <!-- Tabela --> */}
 			<div className="row mt-3">
-				<div className="col-sm-12">
-					<table className="table table-bordered table-hover">
-						<thead>
+				<div className="col-sm-12 table-responsive-sm">
+					<table className="table table-hover">
+						<thead className="table-success">
 							<tr>
 								<th>Id</th>
 								<th>Nome </th>
