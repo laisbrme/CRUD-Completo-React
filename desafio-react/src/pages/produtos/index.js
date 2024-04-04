@@ -72,7 +72,7 @@ export default function Produtos() {
 			limparModal();
 
 			Swal.fire({
-				icon: "success",
+				icon: "warning",
 				title: `Produto ${produto.nome}, foi atualizado com sucesso!`,
 				showConfirmButton: false,
 				timer: 3000,
@@ -110,7 +110,7 @@ export default function Produtos() {
 			limparModal();
 
 			Swal.fire({
-				icon: "success",
+				icon: "warning",
 				title: `Produto ${produto.nome} foi adicionado com sucesso!`,
 				showConfirmButton: false,
 				timer: 3000,
@@ -124,7 +124,6 @@ export default function Produtos() {
 			<div className="row">
 				<div className="col-sm-12">
 					<h4>Produtos</h4>
-					<hr />
 				</div>
 			</div>
 
@@ -134,7 +133,7 @@ export default function Produtos() {
 					<button
 						onClick={adicionar}
 						id="btn-adicionar"
-						className="btn btn-success btn-sm "
+						className="btn btn-warning btn-sm "
 						data-bs-toggle="modal"
 						data-bs-target="#modal-cliente"
 					>
@@ -146,8 +145,8 @@ export default function Produtos() {
 			{/* <!-- Tabela --> */}
 			<div className="row mt-3">
 				<div className="col-sm-12 table-responsive-sm">
-					<table className="table table-hover">
-						<thead className="table-success">
+					<table className="table table-dark table-hover">
+						<thead className="table-warning">
 							<tr>
 								<th>Id</th>
 								<th>Nome </th>
@@ -171,7 +170,7 @@ export default function Produtos() {
 										<button
 											id={produto.id}
 											onClick={editar}
-											className="btn btn-outline-success btn-sm mr-3"
+											className="btn btn-outline-warning btn-sm mr-3"
 											data-bs-toggle="modal"
 											data-bs-target="#modal-cliente"
 										>
@@ -179,7 +178,7 @@ export default function Produtos() {
 										</button>
 										<button
 											id={produto.id}
-											className="btn btn-outline-success btn-sm mr-3"
+											className="btn btn-outline-warning btn-sm mr-3"
 											onClick={excluir}
 										>
 											Excluir
@@ -313,7 +312,7 @@ export default function Produtos() {
 								onClick={salvar}
 								id="btn-salvar"
 								type="button"
-								className="btn btn-success btn-sm"
+								className="btn btn-warning btn-sm"
 							>
 								Salvar
 							</button>

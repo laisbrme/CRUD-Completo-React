@@ -1,79 +1,85 @@
-.caixa-login{
-    width: 390px;
-    background: #b1b1b1;
-    border-radius: 10px;
-    height: auto;
-    margin: auto;
-    margin-top: 70px;
-    padding: 30px;
+.caixa-login {
+	width: 390px;
+	background: #b1b1b1;
+	border-radius: 10px;
+	height: auto;
+	margin: auto;
+	margin-top: 70px;
+	padding: 30px;
 }
 
 .logo {
-    margin-top: 25px;
-    margin-bottom: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .titulo-login {
-    color: var(--cor-primaria);
-    font-size: 22px;
-    margin-bottom: 50px;
+	color: #000;
+    text-shadow: 2px 2px;
+	font-size: 22px;
+	margin-bottom: 50px;
 }
 
 .grupo {
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
 .esqueci-minha-senha a {
-    text-decoration: none;
-    color: var(--cor-primaria);
-    font-size: 14px;
-    font-weight: 600;
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
 }
 
 .esqueci-minha-senha {
-    margin-top: 50px;
-    text-align: center;
-    line-height: 1.5;
+	margin-top: 50px;
+	text-align: center;
+	line-height: 1.5;
+}
+
+body {
+	background-color: var(--cor-bg-fundo);
 }
 
 img {
-    max-width: 50%;
+	max-width: 50%;
 }
 
 h1 {
-    text-align: center;
-    font-weight: 600;
+	text-align: center;
+	font-weight: 600;
 }
 
-input, label {
-    margin-top: 25;
+input,
+label {
+	margin-top: 25;
 }
 
-input{
-    border: none;
+input {
+	border: none;
 }
 
-input, 
+input,
 #btn-entrar {
-    width: 100%;
-    padding: 8px;
-    border-radius: 15px;
+	width: 100%;
+	padding: 8px;
+	border-radius: 15px;
 }
 
 #btn-entrar {
-    margin-top: 10px;
-    background-color: var(--cor-primaria);
-    border: none;
-    color: #fff;
-    font-weight: 600;
+	margin-top: 10px;
+	background-color: var(--cor-primaria);
+	border: none;
+	color: #fff;
+	font-weight: 600;
 }
 
 #btn-entrar:hover {
-    background-color: var(--cor-secundaria);
-    color: black;
-    cursor: pointer;
+	background-color: var(--cor-secundaria);
+	color: black;
+	cursor: pointer;
 }
 
-#loading{
-    display: none;
+#loading {
+	display: none;
 }

@@ -70,6 +70,7 @@ export default function Login() {
 				</div>
 
 				{/* <!-- Botão de entrar --> */}
+				
 				<div className="btn-entrar">
 					<button id="btn-entrar" onClick={autenticar}>
 						Entrar

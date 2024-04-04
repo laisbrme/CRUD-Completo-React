@@ -73,7 +73,7 @@ export default function Clientes() {
 			limparModal();
 
 			Swal.fire({
-				icon: "success",
+				icon: "warning",
 				title: `Cliente ${cliente.nome}, foi atualizado com sucesso!`,
 				showConfirmButton: false,
 				timer: 3000,
@@ -111,7 +111,7 @@ export default function Clientes() {
 			limparModal();
 
 			Swal.fire({
-				icon: "success",
+				icon: "warning",
 				title: `Cliente ${cliente.nome}, foi cadastrado com sucesso!`,
 				showConfirmButton: false,
 				timer: 3000,
@@ -125,7 +125,6 @@ export default function Clientes() {
 			<div className="row">
 				<div className="col-sm-12">
 					<h4>Clientes</h4>
-					<hr />
 				</div>
 			</div>
 
@@ -135,7 +134,7 @@ export default function Clientes() {
 					<button
 						onClick={adicionar}
 						id="btn-adicionar"
-						className="btn btn-success btn-sm "
+						className="btn btn-warning btn-sm "
 						data-bs-toggle="modal"
 						data-bs-target="#modal-cliente"
 					>
@@ -147,8 +146,8 @@ export default function Clientes() {
 			{/* Tabela */}
 			<div className="row mt-3">
 				<div className="col-sm-12 table-responsive-sm">
-					<table className="table table-hover">
-						<thead className="table-success">
+					<table className="table table-dark table-hover">
+						<thead className="table-warning">
 							<tr>
 								<th>Id</th>
 								<th>Nome </th>
@@ -172,7 +171,7 @@ export default function Clientes() {
 										<button
 											id={cliente.id}
 											onClick={editar}
-											className="btn btn-outline-success btn-sm mr-3"
+											className="btn btn-outline-warning btn-sm mr-3"
 											data-bs-toggle="modal"
 											data-bs-target="#modal-cliente"
 										>
@@ -181,7 +180,7 @@ export default function Clientes() {
 										<button
 											id={cliente.id}
 											onClick={excluir}
-											className="btn btn-outline-success btn-sm mr-3"
+											className="btn btn-outline-warning btn-sm mr-3"
 										>
 											Excluir
 										</button>
@@ -197,13 +196,10 @@ export default function Clientes() {
 			<div className="modal" id="modal-cliente">
 				<div className="modal-dialog">
 					<div className="modal-content">
-
 						{/* Modal Header */}
 						<div className="modal-header">
 							<h4 className="modal-title">
-								{modoEdicao 
-									? "Editar cliente" 
-									: "Adicionar cliente"}
+								{modoEdicao ? "Editar cliente" : "Adicionar cliente"}
 							</h4>
 							<button type="button" className="btn-close"></button>
 						</div>
@@ -313,7 +309,7 @@ export default function Clientes() {
 								onClick={salvar}
 								id="btn-salvar"
 								type="button"
-								className="btn btn-success btn-sm"
+								className="btn btn-warning btn-sm"
 							>
 								Salvar
 							</button>
