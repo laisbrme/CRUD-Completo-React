@@ -2,8 +2,7 @@
 
 Atividade avaliativa para a disciplina Front-End Developer - Criando Aplicações para Ambiente Web, do Curso de Análise e Desenvolvimento de Sistemas, do Centro Universitário de Valença.
 
-> Status: Em andamento ⚠️
-> Previsão de conclusão: 05/04/2024
+> Status: Concluído
 
 ## Objetivo
 
