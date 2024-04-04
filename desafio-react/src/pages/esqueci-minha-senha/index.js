@@ -10,11 +10,15 @@ export default function EsqueciMinhaSenha() {
 			Swal.fire({
 				icon: "error",
 				text: "Os campos de e-mail e senha são obrigatórios",
+				showConfirmButton: true,
+				timer: 3000,
 			});
 		}
 		Swal.fire({
 			icon: "success",
 			text: "Verifique sua caixa de entrada e sigas as instruções para a recuperação!",
+			showConfirmButton: false,
+			timer: 3000,
 		});
 	};
 

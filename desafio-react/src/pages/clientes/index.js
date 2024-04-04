@@ -18,7 +18,9 @@ export default function Clientes() {
 			.then((response) => {
 				setClientes(response.data);
 			})
-			.catch((erro) => {});
+			.catch((erro) => {
+				// Fara algo em caso de erro
+			});
 	}, []);
 
 	const editar = (e) => {
@@ -33,18 +35,17 @@ export default function Clientes() {
 
 	const excluirClienteNaLista = (cliente) => {
 		let indice = clientes.findIndex((c) => c.id == cliente.id);
-
 		clientes.splice(indice, 1);
-
 		setClientes((arr) => [...arr]);
 	};
 
 	const excluir = (e) => {
 		let clienteParaExcluir = clientes.find((c) => c.id == e.target.id);
 
-		// eslint-disable-next-line no-restricted-globals
 		if (
-			window.confirm("Deseja realmente excluir o cliente " + clienteParaExcluir.nome)
+			window.confirm(
+				"Deseja realmente excluir o cliente " + clienteParaExcluir.nome
+			)
 		) {
 			clienteService.excluir(clienteParaExcluir.id).then(() => {
 				excluirClienteNaLista(clienteParaExcluir);
@@ -75,7 +76,7 @@ export default function Clientes() {
 				icon: "success",
 				title: `Cliente ${cliente.nome}, foi atualizado com sucesso!`,
 				showConfirmButton: false,
-				timer: 5000,
+				timer: 3000,
 			});
 
 			let indice = clientes.findIndex((c) => c.id == cliente.id);
@@ -113,7 +114,7 @@ export default function Clientes() {
 				icon: "success",
 				title: `Cliente ${cliente.nome}, foi cadastrado com sucesso!`,
 				showConfirmButton: false,
-				timer: 6000,
+				timer: 3000,
 			});
 		});
 	};
@@ -196,10 +197,13 @@ export default function Clientes() {
 			<div className="modal" id="modal-cliente">
 				<div className="modal-dialog">
 					<div className="modal-content">
+
 						{/* Modal Header */}
 						<div className="modal-header">
 							<h4 className="modal-title">
-								{modoEdicao ? "Editar cliente" : "Adicionar cliente"}
+								{modoEdicao 
+									? "Editar cliente" 
+									: "Adicionar cliente"}
 							</h4>
 							<button type="button" className="btn-close"></button>
 						</div>

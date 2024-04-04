@@ -1,8 +1,10 @@
 import "./index.css";
-import React, { useEffect, useState } from "react";
 import produtoService from "../../services/produto-service";
 import Produto from "../../models/Produto";
 import Swal from "sweetalert2";
+
+// HOOKs
+import { useEffect, useState } from "react";
 
 export default function Produtos() {
 	const [produtos, setProdutos] = useState([]);
@@ -23,7 +25,7 @@ export default function Produtos() {
 
 	const editar = (e) => {
 		setModoEdicao(true);
-		let produtoParaEditar = produtos.find((p) => p.id === e.target.id);
+		let produtoParaEditar = produtos.find((p) => p.id == e.target.id);
 		produtoParaEditar.dataCadastro = produtoParaEditar.dataCadastro.substring(
 			0,
 			10
@@ -32,16 +34,18 @@ export default function Produtos() {
 	};
 
 	const excluirProdutoNaLista = (produto) => {
-		let indice = produtos.findIndex((p) => p.id === produto.id);
+		let indice = produtos.findIndex((p) => p.id == produto.id);
 		produtos.splice(indice, 1);
 		setProdutos((arr) => [...arr]);
 	};
 
 	const excluir = (e) => {
-		let produtoParaExcluir = produtos.find((p) => p.id === e.target.id);
+		let produtoParaExcluir = produtos.find((p) => p.id == e.target.id);
 
 		if (
-			window.confirm("Deseja realmente excluir o produto " + produtoParaExcluir.nome)
+			window.confirm(
+				"Deseja realmente excluir o produto " + produtoParaExcluir.nome
+			)
 		) {
 			produtoService.excluir(produtoParaExcluir.id).then(() => {
 				excluirProdutoNaLista(produtoParaExcluir);
@@ -63,7 +67,7 @@ export default function Produtos() {
 			: adicionarProdutoNoBackend(produto);
 	};
 
-	const atualizarProdutoNoBackend = () => {
+	const atualizarProdutoNoBackend = (produto) => {
 		produtoService.atualizar(produto).then((response) => {
 			limparModal();
 
@@ -156,7 +160,7 @@ export default function Produtos() {
 						</thead>
 						<tbody>
 							{produtos.map((produto) => (
-								<tr key={produto.id}>
+								<tr>
 									<td>{produto.id}</td>
 									<td>{produto.nome}</td>
 									<td>{produto.valor}</td>
@@ -166,8 +170,10 @@ export default function Produtos() {
 									<td>
 										<button
 											id={produto.id}
-											className="btn btn-outline-success btn-sm mr-3"
 											onClick={editar}
+											className="btn btn-outline-success btn-sm mr-3"
+											data-bs-toggle="modal"
+											data-bs-target="#modal-cliente"
 										>
 											Editar
 										</button>
@@ -190,10 +196,13 @@ export default function Produtos() {
 			<div className="modal" id="modal-produto">
 				<div className="modal-dialog">
 					<div className="modal-content">
+
 						{/* <!-- Modal Header --> */}
 						<div className="modal-header">
 							<h4 className="modal-title">
-								{modoEdicao ? "Editar produto" : "Adicionar produto"}
+								{modoEdicao 
+									? "Editar produto" 
+									: "Adicionar produto"}
 							</h4>
 							<button type="button" className="btn-close"></button>
 						</div>
@@ -304,14 +313,14 @@ export default function Produtos() {
 								onClick={salvar}
 								id="btn-salvar"
 								type="button"
-								className="btn btn-success"
+								className="btn btn-success btn-sm"
 							>
 								Salvar
 							</button>
 							<button
 								id="btn-cancelar"
 								type="button"
-								className="btn btn-outline-secondary"
+								className="btn btn-light btn-sm"
 								data-bs-dismiss="modal"
 							>
 								Cancelar
