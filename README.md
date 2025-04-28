@@ -1,17 +1,31 @@
-# 2024-01-Desafio_2-Font-End_Developer
+# CRUD-Completo-React
 
-Atividade avaliativa para a disciplina Front-End Developer - Criando Aplicações para Ambiente Web, do Curso de Análise e Desenvolvimento de Sistemas, do Centro Universitário de Valença.
+Este repositório agrupa dois projetos relacionados ao desenvolvimento de um CRUD (Create, Read, Update, Delete) de produtos, demonstrando a evolução do uso de tecnologias front-end:
 
-> Status: Concluído
+1. **CRUD-Completo**: Um projeto básico utilizando HTML, CSS e JavaScript.
+2. **CRUD-Completo-React**: Uma versão otimizada do CRUD utilizando React.js, com navegação estilo SPA e outras melhorias.
+
+## Estrutura do Repositório
+
+- **`CRUD-Completo/`**: Contém o projeto original desenvolvido com HTML, CSS e JavaScript.
+- **`CRUD-Completo-React/`**: Contém o projeto otimizado utilizando React.js, Bootstrap e SweetAlert2.
 
 ## Objetivo
 
-Criar um projeto contendo um CRUD completo de Produtos, semelhante ao <a src="https://github.com/laisbrme/2024-01-Desafio_1-Font-End_Developer">Desafio 1</a>, porém utilizando React.js e aplicando o conteúdo estudado durante a disciplina. O projeto deve conter pelo menos mais 1 rota e efetuar a navegação estilo SPA.
+Demonstrar a evolução de um CRUD básico para uma aplicação mais robusta e moderna utilizando React.js, aplicando os conceitos estudados na disciplina **Front-End Developer - Criando Aplicações para Ambiente Web**, do Curso de Análise e Desenvolvimento de Sistemas, do Centro Universitário de Valença.
 
 ## Tecnologias utilizadas
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" height="50" alt="React" title="React"> <img src="https://img.icons8.com/color/2x/bootstrap.png" height="50" alt="Bootstrap" title="Bootstrap"> <img src="https://sweetalert2.github.io/images/SweetAlert2.png" height="50" alt="SweetAlert2" title="SweetAlert2">
 
+
 ## Vídeo de apresentação
 
+Publicado em 4 de abr. de 2024.
+
 [![Watch the video](https://img.youtube.com/vi/BRNqacJqSvE/hqdefault.jpg)](https://www.youtube.com/embed/BRNqacJqSvE)
+
+## Status do Projeto
+
+> **CRUD-Completo**: Concluído  
+> **CRUD-Completo-React**: Concluído
