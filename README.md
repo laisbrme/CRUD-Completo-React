@@ -14,6 +14,14 @@ Este repositório agrupa dois projetos relacionados ao desenvolvimento de um CRU
 
 Demonstrar a evolução de um CRUD básico para uma aplicação mais robusta e moderna utilizando React.js, aplicando os conceitos estudados na disciplina **Front-End Developer - Criando Aplicações para Ambiente Web**, do Curso de Análise e Desenvolvimento de Sistemas, do Centro Universitário de Valença.
 
+## API Utilizada
+
+Para integrar o projeto com a API, faça o download do repositório correspondente e siga as instruções de configuração disponíveis no link abaixo:
+
+- [Repositório da API - Backend Node.js](https://github.com/WebersonRodrigues/backend-node-exemplo-memoria)
+
+Certifique-se de que a API está configurada corretamente e em execução para que o sistema funcione como esperado.
+
 ## Tecnologias utilizadas
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/539px-React-icon.svg.png" height="50" alt="React" title="React"> <img src="https://img.icons8.com/color/2x/bootstrap.png" height="50" alt="Bootstrap" title="Bootstrap"> <img src="https://sweetalert2.github.io/images/SweetAlert2.png" height="50" alt="SweetAlert2" title="SweetAlert2">
