@@ -8,7 +8,7 @@ Este repositório agrupa dois projetos relacionados ao desenvolvimento de um CRU
 ## Estrutura do Repositório
 
 - **`CRUD-Completo/`**: Contém o projeto original desenvolvido com HTML, CSS e JavaScript.
-- **`CRUD-Completo-React/`**: Contém o projeto otimizado utilizando React.js, Bootstrap e SweetAlert2.
+- **`desafio-react/`**: Contém o projeto otimizado utilizando React.js, Bootstrap e SweetAlert2.
 
 ## Objetivo
 
@@ -36,4 +36,4 @@ Publicado em 4 de abr. de 2024.
 ## Status do Projeto
 
 > **CRUD-Completo**: Concluído  
-> **CRUD-Completo-React**: Concluído
+> **desafio-react**: Concluído
