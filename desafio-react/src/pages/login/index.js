@@ -1,4 +1,5 @@
 import "./index.css";
+import logo from "../../assets/logo.png";
 import { useState } from "react";
 
 import Swal from "sweetalert2";
@@ -40,6 +41,11 @@ export default function Login() {
 	return (
 		<>
 			<div className="caixa-login">
+				{/* <!-- Logo --> */}
+				<div className="logo">
+					<img src={logo} alt="Logo" />
+				</div>
+
 				{/* <!-- Titulo da tela de login --> */}
 				<div className="titulo-login">
 					<h1>Bem-vind@!</h1>
@@ -69,17 +75,17 @@ export default function Login() {
 					/>
 				</div>
 
+				{/* <!-- Link para recuperar a senha --> */}
+				<div className="esqueci-minha-senha">
+					<a href="/esqueci-minha-senha">Esqueci minha senha</a>
+				</div>
+
 				{/* <!-- Botão de entrar --> */}
 				
 				<div className="btn-entrar">
 					<button id="btn-entrar" onClick={autenticar}>
 						Entrar
 					</button>
-				</div>
-
-				{/* <!-- Link para recuperar a senha --> */}
-				<div className="esqueci-minha-senha">
-					<a href="/esqueci-minha-senha">Esqueci minha senha</a>
 				</div>
 			</div>
 		</>

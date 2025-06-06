@@ -1,85 +1,107 @@
 .caixa-login {
-	width: 390px;
-	background: #b1b1b1;
-	border-radius: 10px;
-	height: auto;
-	margin: auto;
-	margin-top: 70px;
-	padding: 30px;
+    width: 400px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    margin: 80px auto;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.logo {
-	margin-top: 25px;
-	margin-bottom: 25px;
+.logo img {
+    width: 240px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+	border-radius: 50%;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
 }
 
 .titulo-login {
-	color: #000;
-    text-shadow: 2px 2px;
-	font-size: 22px;
-	margin-bottom: 50px;
+    color: #333;
+    text-shadow: 1px 1px 2px #ffc10755;
+    font-size: 26px;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .grupo {
-	margin-top: 15px;
+    width: 100%;
+    margin-top: 18px;
 }
 
-.esqueci-minha-senha a {
-	text-decoration: none;
-	color: #000;
-	font-size: 14px;
-	font-weight: 600;
+.grupo label {
+    font-weight: 600;
+    color: #333;
+    display: block;
 }
 
-.esqueci-minha-senha {
-	margin-top: 50px;
-	text-align: center;
-	line-height: 1.5;
+.grupo input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ffc107;
+    font-size: 16px;
+    background: #fafafa;
+    transition: border 0.2s;
 }
 
-body {
-	background-color: var(--cor-bg-fundo);
+.grupo input:focus {
+    border: 1.5px solid #ff9800;
+    outline: none;
 }
 
-img {
-	max-width: 50%;
-}
-
-h1 {
-	text-align: center;
-	font-weight: 600;
-}
-
-input,
-label {
-	margin-top: 25;
-}
-
-input {
-	border: none;
-}
-
-input,
-#btn-entrar {
-	width: 100%;
-	padding: 8px;
-	border-radius: 15px;
+.btn-entrar {
+    width: 100%;
+    margin-top: 16px;
 }
 
 #btn-entrar {
-	margin-top: 10px;
-	background-color: var(--cor-primaria);
-	border: none;
-	color: #fff;
-	font-weight: 600;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #ffc107;
+    border: none;
+    color: #222;
+    font-weight: 700;
+    font-size: 18px;
+    transition: background 0.2s, color 0.2s;
+    box-shadow: 0 2px 8px #ffc10733;
 }
 
 #btn-entrar:hover {
-	background-color: var(--cor-secundaria);
-	color: black;
-	cursor: pointer;
+    background-color: #ff9800;
+    color: #fff;
+    cursor: pointer;
 }
 
-#loading {
-	display: none;
+.esqueci-minha-senha {
+    width: 100%;
+    margin-top: 8px;
+    text-align: right;
+}
+
+.esqueci-minha-senha a {
+    text-decoration: none;
+    color: #ff9800;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.esqueci-minha-senha a:hover {
+    color: #ffc107;
+}
+
+body {
+    background: linear-gradient(120deg, #fdd766 0%, #b1b1b1 100%);
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
 }
