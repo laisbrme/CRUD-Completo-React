@@ -146,7 +146,7 @@ export default function Clientes() {
 			{/* Tabela */}
 			<div className="row mt-3">
 				<div className="col-sm-12 table-responsive-sm">
-					<table className="table table-dark table-hover">
+					<table className="table table table-hover">
 						<thead className="table-warning">
 							<tr>
 								<th>Id</th>
@@ -171,7 +171,7 @@ export default function Clientes() {
 										<button
 											id={cliente.id}
 											onClick={editar}
-											className="btn btn-outline-warning btn-sm mr-3"
+											className="btn btn-warning btn-sm mr-3"
 											data-bs-toggle="modal"
 											data-bs-target="#modal-cliente"
 										>
@@ -180,7 +180,7 @@ export default function Clientes() {
 										<button
 											id={cliente.id}
 											onClick={excluir}
-											className="btn btn-outline-warning btn-sm mr-3"
+											className="btn btn-warning btn-sm mr-3"
 										>
 											Excluir
 										</button>
