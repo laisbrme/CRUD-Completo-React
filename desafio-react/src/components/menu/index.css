@@ -6,6 +6,16 @@ ul.menu {
 	background-color: var(--cor-primaria);
 }
 
+.menu .logo img {
+    width: 40px;
+    height: auto;
+    display: block;
+    margin: 8px auto;
+	margin-right: 16px;
+    object-fit: contain;
+	background: white;
+}
+
 li {
 	float: left;
 }

@@ -1,4 +1,5 @@
 import "./index.css";
+import logo from "../../assets/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import exportedObject from "../../services/usuario-service";
 
@@ -13,6 +14,9 @@ export default function Menu() {
 		return (
 			<div>
 				<ul className="menu">
+					<li className="logo">
+						<img src={logo} alt="Logo" />
+					</li>
 					<li>
 						<Link to="/home">Home</Link>
 					</li>
