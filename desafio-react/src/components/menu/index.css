@@ -1,42 +1,61 @@
 ul.menu {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: var(--cor-primaria);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #fdf8e6;
+    box-shadow: 0 2px 8px #00000022;
 }
 
 .menu .logo img {
-    width: 40px;
+    width: 44px;
     height: auto;
     display: block;
-    margin: 8px auto;
-	margin-right: 16px;
+    margin: 8px auto 8px 0;
+    margin-right: 16px;
     object-fit: contain;
-	background: white;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #ff9800;
+    box-shadow: 0 1px 4px #00000022;
 }
 
 li {
-	float: left;
+    float: left;
 }
 
 li:first-child {
-	margin-left: 25px;
+    margin-left: 25px;
 }
 
 li a {
-	display: block;
-	color: #000000;
-	padding: 15px 8px;
-	text-decoration: none;
-	text-align: center;
+    display: block;
+    color: #222;
+    padding: 15px 12px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 6px;
 }
 
 li a:hover {
-	background-color: var(--cor-secundaria);
+    background-color: #fff3cd;
+    color: #ff9800;
 }
 
 li:last-child {
-	float: right;
-	margin-right: 25px;
+    float: right;
+    margin-right: 25px;
+}
+
+@media (max-width: 600px) {
+    ul.menu {
+        flex-direction: column;
+    }
+    li, li:last-child {
+        float: none;
+        margin: 0;
+    }
 }
