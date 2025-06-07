@@ -7,7 +7,9 @@ export default function Menu() {
 		exportedObject.sairDoSistema();
 	};
 
-	if (useLocation().pathname !== "/") {
+	const location = useLocation();
+
+	if (location.pathname !== "/" && location.pathname !== "/esqueci-minha-senha") {
 		return (
 			<div>
 				<ul className="menu">
