@@ -1,4 +1,5 @@
 import "./index.css";
+import logo from "../../assets/logo.png";
 import Swal from "sweetalert2";
 
 
@@ -25,6 +26,11 @@ export default function EsqueciMinhaSenha() {
 	return (
 		<>
 			<div className="caixa-recuperacao">
+
+				<div className="logo">
+					<img src={logo} alt="Logo" />
+				</div>
+				
 				<div className="container mt-3">
 					<h1 className="titulo">Redefinir senha</h1>
 					<p className="txt1">
