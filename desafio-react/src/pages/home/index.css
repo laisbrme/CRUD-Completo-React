@@ -1,3 +1,39 @@
-h1 {
-    text-shadow: 1px 1px;
+.home-container {
+    display: flex;
+    margin-top: 128px;
+    gap: 24px;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    padding: 24px 16px;
+    border-radius: 12px;
+    background-color: #fff;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 16px #ffc10733;
+    cursor: pointer;
+    gap: 12px;
+}
+
+button img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+button:hover {
+    background-color: #ffe082;
+    color: #222;
+    box-shadow: 0 4px 16px #ffc10755;
+}
+
+button span {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 18px;
 }
